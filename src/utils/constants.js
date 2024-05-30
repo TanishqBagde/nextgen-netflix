@@ -1,4 +1,17 @@
+import axios from 'axios';
 export const API_END_POINT = "http://localhost:8080/api/v1/user";
+
+axios.post(API_END_POINT, {
+
+}, {
+  withCredentials: true 
+})
+.then(response => {
+  console.log(response.data);
+})
+.catch(error => {
+  console.error('Error:', error);
+});
 
 export const options = {
     method: 'GET',

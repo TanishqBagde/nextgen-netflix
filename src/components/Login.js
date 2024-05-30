@@ -121,10 +121,10 @@ const Login = () => {
                                 type="password"
                                 className="w-60 h-9 px-4 py-1 m-2 border text-lg rounded-md focus:outline-none focus:border-blue-500 bg-slate-800"
                             />
-                            <button className="bg-slate-400 text-sm rounded-md w-60 p-2 m-3">{isLogin ? "Log In" : "Sign Up"}</button>
+                            <button className="bg-slate-400 text-sm rounded-md w-60 p-2 m-3 cursor-pointer">{isLogin ? "Log In" : "Sign Up"}</button>
                             <p className="text-sm font-light">
-                                {isLogin ? "New to Netflix?" : "Already have an account?"}
-                                <span onClick={loginHandler} className="text-sm text-green-400 cursor-pointer">
+                                {isLogin ? "New to AppleTv+?" : "Already have an account?"}
+                                <span onClick={loginHandler} className="text-sm text-green-400 cursor-pointer ">
                                     {isLogin ? " Sign Up" : " Log In"}
                                 </span>
                             </p>

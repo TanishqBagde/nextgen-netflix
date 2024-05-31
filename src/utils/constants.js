@@ -4,7 +4,7 @@ export const API_END_POINT = "https://main--appletv-server.netlify.app/api/v1/us
 axios.post(API_END_POINT, {
   // your request body here
 }, {
-  withCredentials: true // Include credentials in the request
+  withCredentials: false // Include credentials in the request
 })
 .then(response => {
   console.log(response.data);

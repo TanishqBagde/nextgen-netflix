@@ -1,5 +1,5 @@
 import axios from 'axios';
-export const API_END_POINT = "https://nextgen-netflix-server.vercel.app/api/v1/user";
+export const API_END_POINT = "https://nextgen-netflix-server.onrender.com/api/v1/user";
 
 axios.post(API_END_POINT, {
   // your request body here

@@ -7,8 +7,9 @@ import { useSelector } from "react-redux";
 const MainContainer = () => {
     const movie = useSelector(store => store.movie?.nowPlayingMovies);
     if(!movie) return ; //early return
-
-    const {title,overview,id} = movie[4];
+    
+    const randomIndex = Math.floor(Math.random() * movie.length);
+    const { title, overview, id } = movie[randomIndex];
     return(
         <div>
           <VideoTitle title={title} overview={overview}/>

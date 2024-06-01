@@ -31,7 +31,7 @@ const Browse = () => {
     return (
         <div>
             <Header/>
-            <div className='-mt-20 '>
+            <div className='-mt-10 '>
                 {
                     toggle ? <SearchMovies/> : (   //if toggled then switch to the searchMovies else the browse page should be there
                        <>

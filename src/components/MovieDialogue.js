@@ -23,11 +23,10 @@ const MovieDialog = () => {
             onClose={handleClose}
             aria-labelledby="alert-dialog-title"
             aria-describedby="alert-dialog-description"
-            maxWidth ="md"
             fullScreen
         >
             <DialogContent className="p-0 m-0" style={{ height: '100vh', display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
-                <DialogContentText id="alert-dialog-description" component="div" className="p-0 m-0" style={{ height: '60vh', display: 'flex', alignItems: 'center', justifyContent: 'center'  }}>
+                <DialogContentText id="alert-dialog-description" component="div" className="p-0 m-0" style={{ width: '100%', height: '100%' }}>
                     <VideoBackground movieId={id} bool={true} />
                 </DialogContentText>
             </DialogContent>

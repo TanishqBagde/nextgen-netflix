@@ -11,7 +11,7 @@ const MainContainer = () => {
     const randomIndex = Math.floor(Math.random() * movie.length);
     const { title, overview, id } = movie[randomIndex];
     return(
-        <div className ="p-4 md:p-8">
+        <div>
           <VideoTitle title={title} overview={overview}/>
           <VideoBackground movieId={id}/>
         </div>

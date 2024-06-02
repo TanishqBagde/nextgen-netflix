@@ -87,7 +87,7 @@ const Login = () => {
     return (
         <div>
             <Header />
-            <div className="">
+            <div className="relative">
                 <img
                     className="w-full h-auto"
                     src={backgroundImage}
@@ -95,7 +95,7 @@ const Login = () => {
                 />
                 <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-center text-white font-bold text-3xl w-3/4">
                     <h1 className="font-bold text-3xl">Ready to watch? Enter your Details to create or restart your membership</h1>
-                    <form onSubmit={getInputData} className="flex flex-col w-3/12 pr-8 pl-8 my-8 mx-auto items-center justify-center bg-black rounded-lg opacity-85">
+                    <form onSubmit={getInputData} className="flex flex-col w-3/12 sm:w-1/2 md:w-1/3 pr-8 pl-8 my-8 mx-auto items-center justify-center bg-black rounded-lg opacity-85">
                         <h1 className="p-2 ">{isLogin ? "Log In" : "Sign Up"}</h1>
                         <div className="mb-4 flex flex-col items-center">
                             {!isLogin && (
@@ -104,7 +104,7 @@ const Login = () => {
                                     onChange={(e) => setFullName(e.target.value)}
                                     placeholder='Full Name'
                                     type='text'
-                                    className="w-60 h-9 px-4 py-1 m-2 border text-lg rounded-md  focus:outline-none focus:border-blue-500 bg-slate-800"
+                                    className="w-full h-9 px-4 py-1 m-2 border text-lg rounded-md  focus:outline-none focus:border-blue-500 bg-slate-800"
                                 />
                             )}
                             <input
@@ -112,14 +112,14 @@ const Login = () => {
                                 onChange={(e) => setEmail(e.target.value)}
                                 placeholder='Email'
                                 type='text'
-                                className="w-60 h-9 px-4 py-1 m-2 border text-lg rounded-md focus:outline-none focus:border-blue-500 bg-slate-800"
+                                className="w-full h-9 px-4 py-1 m-2 border text-lg rounded-md focus:outline-none focus:border-blue-500 bg-slate-800"
                             />
                             <input
                                 value={password}
                                 onChange={(e) => setPassword(e.target.value)}
                                 placeholder='Password'
                                 type="password"
-                                className="w-60 h-9 px-4 py-1 m-2 border text-lg rounded-md focus:outline-none focus:border-blue-500 bg-slate-800"
+                                className="w-full h-9 px-4 py-1 m-2 border text-lg rounded-md focus:outline-none focus:border-blue-500 bg-slate-800"
                             />
                             <button className="bg-slate-400 text-sm rounded-md w-60 p-2 m-3 cursor-pointer">{isLogin ? "Log In" : "Sign Up"}</button>
                             <p className="text-sm font-light">

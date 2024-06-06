@@ -8,13 +8,16 @@ import { useDispatch } from 'react-redux';
 import { setUser } from '../redux/userSlice';
 
 const images = [
+    'https://static1.moviewebimages.com/wordpress/wp-content/uploads/2024/01/noomi-rapace-spinning-in-constellation-from-apple-tv.jpg',
     'https://9to5mac.com/wp-content/uploads/sites/6/2023/04/apple-tv-silo-key-art.jpeg?quality=82&strip=all&w=1500',
-    'https://c4.wallpaperflare.com/wallpaper/970/606/446/mythic-quest-tv-series-apple-tv-people-hd-wallpaper-preview.jpg',
-    'https://www.apple.com/tv-pr/articles/2024/04/apple-tv-debuts-trailer-for-dark-matter-starring-joel-edgerton-and-jennifer-connelly/images/big-image/big-image-01/041124_Apple_Debuts_Trailer_Dark_Matter_Big_Image_01_big_image_post.jpg.large.jpg',
+    'https://images.macrumors.com/t/eSY7fl5kAG6u6nM80ATABYoFWkU=/1600x0/article-new/2022/07/for-all-mankind-apple-tv-plus.jpg',
     'https://m.media-amazon.com/images/M/MV5BZWE2NGYyY2QtYzE1Zi00MDM4LWJiNTQtOWQ0MjM3ZTIxN2M4XkEyXkFqcGdeQXVyMDM2NDM2MQ@@._V1_.jpg',
     'https://www.apple.com/tv-pr/shows-and-films/m/monarch-legacy-of-monsters/images/season-01/show-home-graphic-header/key-art-01/4x1/Apple_TV_Monarch_Legacy_Monsters_key_art_graphic_header_4_1_show_home.jpg.og.jpg?1699642715139',
-    'https://www.apple.com/tv-pr/shows-and-films/f/foundation/images/season-02/show-home-graphic-header/key-art-02/4x1/Apple_TV_Foundation_key_art_graphic_header_4_1_show_home.jpg.og.jpg?1691773583710',
-    'https://www.apple.com/tv-pr/articles/2023/12/apples-limited-series-masters-of-the-air-reaches-new-heights-with-trailer-debut-ahead-of-its-highly-anticipated-january-26-2024-global-premiere-on-apple-tv/images/big-image/big-image-01/120523_Masters_of_the_Air_Trailer_Post_Big_Image_01_big_image_post.jpg.slideshow_large.jpg'// Add more URLs here
+    'https://pbs.twimg.com/media/FfJf4LVUUAAGaXb.jpg:large',
+    'https://www.insidehook.com/wp-content/uploads/2023/10/Apple-TV-Plus.jpg?fit=1200%2C800',
+    'https://www.apple.com/tv-pr/articles/2023/01/apple-tv-debuts-trailer-for-hello-tomorrow-starring-and-executive-produced-by-emmy-award-winner-billy-crudup/images/big-image/big-image-01/011823_ATV_apple_tv_debuts_trailer_for_hello_tomorrow_Big_Image_01_big_image_post.jpg.large.jpg',
+    'https://w.forfun.com/fetch/14/1441a74e9addf6e30608568b2203cd09.jpeg',
+    'https://photos5.appleinsider.com/gallery/0-83052-Apple_TV_Mythic_Quest_key_art_16_9-xl.jpg'// Add more URLs here
 ];
 
 const Login = () => {
